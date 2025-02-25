@@ -1,0 +1,25 @@
+h1 {
+    background-color: salmon;
+    color: rgb(255, 255, 255);
+  }
+  p{
+      background-color: rgb(221, 9, 94);
+      color: rgb(255, 255, 255);
+  }
+  .s1{
+      background-color: rgb(255, 136, 0);
+      color: rgb(255, 255, 255);
+  }
+  .c1{
+      color: rgb(255, 255, 255);
+  }
+  .c2{
+      background-color: rgb(0, 0, 0);
+  }
+  *{
+    background-color: bisque;
+  }
+  .test{
+    background-color: black;
+    color: lemonchiffon;
+  }
