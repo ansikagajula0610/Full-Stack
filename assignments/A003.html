@@ -1,131 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap; /* Ensures items wrap on smaller screens */
-            justify-content: center;
-            gap: 20px; /* Space between items */
-        }
-
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+        justify-content: center;
+        gap: 20px; /* Space between items */
+      }
+      .main {
+        background-color: bisque;
+        width: 23%; /* 4 items per row */
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .main img {
+        max-width: 100%; /* Ensures images fit within their container */
+        height: auto;
+        border-radius: 5px;
+      }
+      .main h4 {
+        margin: 10px 0;
+      }
+      .main pre {
+        font-size: 16px;
+        text-align: center;
+      }
+      .main button {
+        background-color: #4a403a;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .main button:hover {
+        background-color: #110e0c;
+      }
+      /* Responsive Design */
+      @media (max-width: 1024px) {
         .main {
-            background-color: bisque;
-            width: 23%; /* 4 items per row */
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
+          width: 45%; /* 2 items per row on smaller screens */
         }
-
-        .main img {
-            max-width: 100%; /* Ensures images fit within their container */
-            height: auto;
-            border-radius: 5px;
+      }
+      @media (max-width: 768px) {
+        .main {
+          width: 100%; /* 1 item per row on mobile */
         }
-
-        .main h4 {
-            margin: 10px 0;
-        }
-
-        .main pre {
-            font-size: 16px;
-            text-align: center;
-        }
-
-        .main button {
-            background-color: #4a403a;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .main button:hover {
-            background-color: #110e0c;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .main {
-                width: 45%; /* 2 items per row on smaller screens */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .main {
-                width: 100%; /* 1 item per row on mobile */
-            }
-        }
-        .an{
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            font-style: italic;
-        }
+      }
+      .an {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-style: italic;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="an">
-    <h2><b>Coffee Shop</b></h2>
-    <span><b>Cart:0</b></span>
+      <h2><b>Coffee Shop</b></h2>
+      <span><b>Cart:0</b></span>
     </div>
     <div class="row">
-        <div class="main">
-            <img src="/images/coffee.jpg">
-            <h4>Product 1</h4>
-            <pre>Price: 250 <button>Add</button></pre>
-        </div>
-        <div class="main">
-            <img src="/images/sandwich.jpg">
-            <h4>Product 2</h4>
-            <pre>Price: 220 <button>Add</button></pre>
-        </div>
-        <div class="main">
-            <img src="/images/mug.jpg">
-            <h4>Product 3</h4>
-            <pre>Price: 250 <button>Add</button></pre>
-        </div>
-        <div class="main">
-            <img src="/images/cappuchino.jpg">
-            <h4>Product 4</h4>
-            <pre>Price: 250 <button>Add</button></pre>
-        </div>
-        <div class="main">
-            <img src="/images/cappuchino.jpg">
-            <h4>Product 5</h4>
-            <pre>Price: 180 <button>Add</button></pre>
-        </div>
-        <div class="main">
-            <img src="/images/bad.jpg">
-            <h4>Product 6</h4>
-            <pre>Price: 50 <button>Add</button></pre>
-        </div>
-        <div class="main">
-            <img src="/images/chocolate.jpg">
-            <h4>Product 7</h4>
-            <pre>Price: 180 <button>Add</button></pre>
-        </div>
-        <div class="main">
-            <img src="/images/sandwich.jpg">
-            <h4>Product 8</h4>
-            <pre>Price: 180 <button>Add</button></pre>
-        </div>
+      <div class="main">
+        <img src="/images/coffee.jpg" />
+        <h4>Product 1</h4>
+        <pre>Price: 250 <button>Add</button></pre>
+      </div>
+      <div class="main">
+        <img src="/images/sandwich.jpg" />
+        <h4>Product 2</h4>
+        <pre>Price: 220 <button>Add</button></pre>
+      </div>
+      <div class="main">
+        <img src="/images/mug.jpg" />
+        <h4>Product 3</h4>
+        <pre>Price: 250 <button>Add</button></pre>
+      </div>
+      <div class="main">
+        <img src="/images/cappuchino.jpg" />
+        <h4>Product 4</h4>
+        <pre>Price: 250 <button>Add</button></pre>
+      </div>
+      <div class="main">
+        <img src="/images/cappuchino.jpg" />
+        <h4>Product 5</h4>
+        <pre>Price: 180 <button>Add</button></pre>
+      </div>
+      <div class="main">
+        <img src="/images/bad.jpg" />
+        <h4>Product 6</h4>
+        <pre>Price: 50 <button>Add</button></pre>
+      </div>
+      <div class="main">
+        <img src="/images/chocolate.jpg" />
+        <h4>Product 7</h4>
+        <pre>Price: 180 <button>Add</button></pre>
+      </div>
+      <div class="main">
+        <img src="/images/sandwich.jpg" />
+        <h4>Product 8</h4>
+        <pre>Price: 180 <button>Add</button></pre>
+      </div>
     </div>
-</body>
+  </body>
 </html>
