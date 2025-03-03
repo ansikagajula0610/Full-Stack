@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <select id="fruits" multiple> <!--lets us select multiple options-->
+        <option value="apple">Apple</option>
+        <option value="pear">Pear</option>
+        <option value="banana">Banana</option>
+      </select>
+      <br />
+      <input type="button" onclick="disp()" value="Click" />
+      <br /><br />
+      <label id="lbl"></label>
+    </form>
+    <script>
+      function disp() {
+        // fruits.options[2].selected = true; // highlights index 2 when selected
+        // fruits.selectedIndex = 2; //will give only banana only even if other fruit is selected
+        str = fruits.value; //prints which value is selected
+    //     str=""
+    //     for (let e of fruits.options){
+    //       if(e.selected)  str += e.value + " "
+    //     } //code for printing multiple fruits//
+
+        lbl.innerHTML = str; //used for printing in the page itself
+      } 
+    </script>
+  </body>
+</html>

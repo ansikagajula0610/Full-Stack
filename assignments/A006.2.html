@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function checkSquare(){
+        let a=length.value
+        let b=breadth.vale
+        if(a==b){
+            lbl.innerText="It is a square";
+        }
+        else{
+            lbl.innerText="It is a rectangle";
+        }
+    }
+</script>
+<body>
+    <h1>Checking if rectangle or square</h1>
+    <p><input type="number" placeholder="length" id="length" required></p>
+    <p><input type="number" placeholder="breadthength" id="breadth" required></p><br>
+    <button onclick="checkSquare()">Submit & Check</button>
+    <p><label id="lbl"></label></p> 
+</body>
+</html>
